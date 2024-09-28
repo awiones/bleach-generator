@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bleach Power Selector</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bleach Power Selector</a>
+          <div class="d-flex">
+            <a href="https://github.com/awiones" target="_blank" class="nav-link text-white">
+              <i class="fab fa-github"></i> Find me
+            </a>
+          </div>
+        </div>
+      </nav>
+
+  <div class="container d-flex align-items-center justify-content-center vh-100">
+    <div class="row justify-content-center text-center animate__animated animate__fadeIn animate__slow">
+      <div class="col-md-12">
+        <h1 class="mb-4 animate__animated animate__pulse animate__infinite">Bleach Power Selector</h1>
+        <form id="userForm">
+          <div class="mb-3">
+            <input type="text" id="username" class="form-control text-center" placeholder="Enter your name" required>
+          </div>
+          <div class="row mt-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="class-box shinigami-box" id="shinigami">
+                <h2>Shinigami</h2>
+                <img src="img/shinigami.png" alt="Shinigami" class="icon">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="class-box quincy-box" id="quincy">
+                <h2>Quincy</h2>
+                <img src="img/quincy.png" alt="Quincy" class="icon">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="class-box arancar-box" id="arancar">
+                <h2>Arancar</h2>
+                <img src="img/arrancar.png" alt="Arancar" class="icon">
+              </div>
+            </div>
+          </div>
+          <input type="hidden" id="classSelector" name="classSelector">
+          <button type="submit" class="btn btn-primary btn-lg mt-4 animate__animated animate__tada">Generate Power</button>
+        </form>
+        <audio id="bgMusic" loop>
+          <source src="sounds/bleach-theme.mp3" type="audio/mpeg">
+        </audio>
+        <button id="musicToggle" class="btn btn-dark mt-3">Toggle Background Music</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
